@@ -13,106 +13,102 @@ Heart-Disease-Prediction-Classification </h1>
 <h4>Executable Files:</h4>
 <ul>
   <li><b>Heart_disease.ipynb
-.ipynb</b> - Includes all functions required for clustering operations.</li>
+</b> - Includes all functions required for classification operations.</li>
 </ul>
 
 <h4>Input Files:</h4>
 <ul>
-  <li><b>data_cardiovascular_risk.csv</b> - Input dataset having information about different shows/movies available on Netflix.</li>
+  <li><b>data_cardiovascular_risk.csv</b> - The dataset acquired contain various information related to human body health as well as body condition. The information incorporates the data containing various classification based values as explain in the dataset.</li>
 </ul>
 
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
 <h2> :book:Introduction</h2>
-As the energy crisis increasing day by day causes various factors to think for in todays scenario. It not only affecting the world energy requirement issues but also affects the economic and social health of any country, mostly in the countries which are going through developing phase. To overcome several related issues, it is necessary to have the outages in order to compensate the load demand. And hence the prediction of energy used by appliances plays a vital role in the study.
-	This project illustrates the energy consumed by house and the data has been collected with the help of sensors. The readings have been taken for each 10 min interval for consecutive 4.5 months. Saving of energy can be done by controlling the energy usage. And thus, prediction of usage comes into picture. This study can save the money of consumer as well as if extra energy is generated then it can also fed back to Grid(Also called as regeneration). The project mainly concentrates over the study with the help of machine learning regression technique to find out the energy consumption prediction.
-
+Cardiovascular Diseases (CVDs) proven to be the major reason for a large number of death in the entire world over the many years and has comes up as the most life-threatening issue, not only in Indian contingent  but in the entire world. So, there is a serious need for the accurate, reliable and adaptable system to predict such diseases in time for the precautionary measure. Machine Learning based algorithms as well as techniques have been applied to datasets for the analysis of large and complicated data. Many researchers, in recent years, were being using many machines learning algorithm to help the health care sector and the professionals in the analysis of heart-related diseases. Heart is one of the major body organs. Machine learning classification approach is one of the useful techniques in this field to predict the upcoming coronary heart disease (CHD) with the help of previously available data. The main objective of this project is to build a binary classifier model, which can predict whether a person will be at a 10-year risk of future coronary heart disease (CHD) on the basis medical history and other relevant information. This article mainly concentrates on the classification approach of machine learning as the data is nominal and continuous type.
 
 
 <h2> :book: Problem Statement</h2>
-We have to predict Appliance energy consumption for a house based on factors like temperature, humidity & pressure . In order to achieve this, we need to develop a supervised learning model using regression algorithms. Regression algorithms are used as data consist of continuous features and there are no identification of appliances in dataset.
+The dataset acquired contain various information related to human body health as well as body condition. The information incorporates the data containing various classification based values as explain in the dataset. The main purpose of this project is to understand the dataset, visualize and prepare a classification based model to predict whether a person is prone to 10 year coronary heart disease or not. 
 
 <h2> :book: Data Summery</h2>
-The dataset collected contain various information regarding features by which energy is being used. The features incorporated by temperature, humidity, wind speed, pressure, etc. Our main target is to analyze the data and predict the energy consumed by the house using the given dataset. For the same, we need to develop a supervised machine learning model based on regression approach.  Illustration of the some major feature contained is given below:
+Illustration of the some major data contained is given below:
 
-1.	date: time: given date time month and day
-2.	lights : energy used by lights in Wh
-3.	T1 : Temperature given in kitchen area, in Celsius
-4.	T2 : Temperature given in living room area, in Celsius
-5.	T3 : Temperature mentioned in laundry room area
-6.	T4 : Temperature of office room, given in Celsius
-7.	T5 : Temperature recorded in  bathroom area, in Celsius
-8.	T6 : Temperature given outside the building area particularly (north side), in Celsius
-9.	T7 : Temperature provided in ironing room, in Celsius
-10.	T8 : Temperature in teenager room 2, in Celsius
-11.	T9 : Temperature in parents’ room, in Celsius
-12.	T_out : Outside temperature (from Chievres weather station), in °C
-13.	Tdewpoint : (from Chievres weather station), 
-14.	RH_1 : Kitchen area Humidity %
-15.	RH_2 : Living room area Humidity, in %
-16.	RH_3 : Laundry room area Humidity, in %
-17.	RH_4 : Office room Humidity, in %
-18.	RH_5 : Bathroom area Humidity, in %
-19.	RH_6 :Outside the building Humidity (north side), in %
-20.	RH_7 : Ironing room Humidity, in %
-21.	RH_8 : Teenager room 2  Humidity, in %
-22.	RH_9 : Parents’ room Humidity, in %
-23.	RH_out :Outside Humidity (from Chievres weather station), in %
-24.	Pressure : (from Chievres weather station), in mm Hg
-25.	Wind speed: (from Chievres weather station), in m/s
-26.	Visibility :(from Chievres weather station), in km
-27.	Rv1 :Random variable 1, non-dimensional[1]
-28.	Rv2 :Random variable 2, non-dimensional[1]
-29.	Appliances : Total energy used by appliances, in Wh[1]
+•Sex : male / female ("M" or "F") 
+
+•Age : Age of the person 
+
+•Education : Education level of the person 
+
+
+•is_smoking : whether the person is smoking or not (YES  or  No) 
+
+•CigsPerDay: No. of cigarettes person used to have per day.
+
+•BPMeds: whether the person taking medicine for Blood Pressure or not
+
+•prevalentstroke: whether the person had heart stroke previously or not
+
+•prevalenthyp: whether the person having prevalent hypertension issue or not
+
+•Diabetes: whether patient having diabetic or not
+
+•TotChol: total cholesterol level in the body of person
+
+•sysBP: systolic blood pressure of person
+
+•diaBP: diastolic blood pressure of person
+
+•BMI: Body Mass Index of persons
+
+•HeartRate: heart rate of the person
+
+•Glucose : glucose level of the person
+
+•tenyearchd : 10-year risk of coronary heart disease CHD 
+
+
 
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
 
-# :book:Training Process:
-We have used following 5 regression techniques to train the data:
-
-1] LASSO Regression:
-It is the regression which uses the shrinkage technique. Which means data values will be shrunk towards the central point. The Lasso regression is very useful when data parameters are few. The acronym “LASSO” stands for Least Absolute Shrinkage and Selection Operator.
-Lasso solutions are quadratic programming problems, which are best solved with software (like Matlab). 
-
-2] RIDGE Regression:
-This regression method is mainly used when data having multi-collinearity. The method performs L2 regularization . Whenever multi-collnearity problem occurs, least-square are unbiased and variance are large. Because of it predicted value being far away from the actual values.
+# :book:Approach:
 
 
-3] Random Forest: 
-Random Forest Regression method is a supervised learning algorithm which uses ensemble learning method for regression technique. Ensemble learning method is nothing but a technique which combines predictions from various machine learning algorithms to prepare a more accurate prediction as compare to the single model.
+1] Raw Data Collection:
+The data collected from the source contains various information useful for the  analysis as well as for visualization purpose. There two ways one can utilize the data. By importing the data file into the system and then accessing by writing code for it or by directly mounting the drive.  
 
-4] Gradient Boosting Classifier:
-This regression technique calculates the difference between the current predicted value and well known correct target value. This residual is then added to the existing model and this pushes the model towards correct values. To improve the performance of the model we can repeat the process again and again.
+2] Data Processing and Feature Engineering:
 
-5] ExtraTree-regressor:
-It is a type of ensemble learning technique of regression that adds the results of different de-correlated decision trees which are similar to Random Forest Classifier. Extra Tree can also achieve a good or better prediction than the random forest.
+i)Dealing with missing values:
+
+It checks whether our data contains any missing value is there or not, then it will replace it with the zero. In this article some column has missing values, so we will replace them by zero.
+
+ii)Checking for duplicates
+
+The given dataset does not contain any duplicate values
+
+iii)Removing unnecessary features:
+
+In the given model some the features are not relevant to 10-Year risk of CHD. The columns are education, id. Hence, we have dropped these columns for further analysis.
+
 
 
 # :book:Steps involved:
-The full code for this article can be found here. It is implemented in Python and uses various clustering algorithms. Below is a short description of the general approach I used:
 
-1] Data Cleansing and Preprocessing: 
-It checks whether our data contains any missing value is there or not, then it will replace it with the zero. There are no such columns present in the database and hence no need of this operation.
-
-
-2] Exploratory data analysis: 
+1] Exploratory data analysis: 
 Here, we wish to gain important statistical insights from our data and analyze the distribution of various attributes, correlations between attributes and target variables, and important quotas and proportions of categorical attributes.
 
-3]Train and testing procedure pipeline:
-Following methodology has been followed to train and test the model.
+2]Training split of data
+We have considered the train size of the data to be 85% of total data set whereas test set will be covered with 5% of data
+Various allgrithms used are as follows:
 
-•Storing of all the algorithm’s present in a list and then  Iterate over the list
-
-•The regressor’s random_state was initialized.
-
-•The regressor was design to fit on the test as well as training data
-
-•The properties of the regressor , Name, timining and score for training and testing set will be stored in a dictionary variable as key-value pairs.
+A) DecisionTree Classifier
+B) RandomForestClassifier
+C) XGBoost Classifier
+D) Logistic Regression
 
 # :book: Conclusion
 
-The top 3 important features are humidity attributes, which leads to the conclusion that humidity affects power consumption more than temperature. Windspeed is least important as the speed of wind doesn’t affect power consumption inside the house. So controlling humidity inside the house may lead to energy savings.
-
+A cardiovascular risk prediction model is being prepared with the help of various classification techniques such as Logistic regression, RandomForest technique, XGBoost, Decision tree. The designed model can predict the 10 year risk of Coronary Heart Disease (CHD) for the individual. It is completely based on the previous and present health as well as medical condition.
