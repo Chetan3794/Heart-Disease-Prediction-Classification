@@ -7,20 +7,18 @@ Heart-Disease-Prediction-Classification </h1>
 	
 ![image](https://user-images.githubusercontent.com/114068950/212884044-52745e1e-bd6b-4a36-a247-67b4d6c35036.png)
 
-<p> Experimental data used to create regression models of appliances energy use in a low energy building</p>
-
 <h2> :floppy_disk: Project Files Description</h2>
 
 <p>This Project includes 1 colab notebook, 1 CSV file as well as 1 presentation pdf</p>
 <h4>Executable Files:</h4>
 <ul>
-  <li><b>Appliance_energy_prediction_Regression_final.ipynb
+  <li><b>Heart_disease.ipynb
 .ipynb</b> - Includes all functions required for clustering operations.</li>
 </ul>
 
 <h4>Input Files:</h4>
 <ul>
-  <li><b>data_application_energy.csv</b> - Input dataset having information about different shows/movies available on Netflix.</li>
+  <li><b>data_cardiovascular_risk.csv</b> - Input dataset having information about different shows/movies available on Netflix.</li>
 </ul>
 
 
