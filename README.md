@@ -4,8 +4,9 @@ Heart-Disease-Prediction-Classification </h1>
 <h3 align="center"> AlmaBetter Verfied Project - <a href="https://www.almabetter.com/"> AlmaBetter </a> </h5>
 
 <p align="center"> 
-	
-   ![image](https://user-images.githubusercontent.com/114068950/212884044-52745e1e-bd6b-4a36-a247-67b4d6c35036.png)
+
+![image](https://user-images.githubusercontent.com/114068950/214820769-a267a654-bc48-4440-8de2-c5dba3cc5e1c.png)
+
 <h2> :floppy_disk: Project Files Description</h2>
 
 <p>This Project includes 1 colab notebook, 1 CSV file as well as 1 presentation pdf</p>
