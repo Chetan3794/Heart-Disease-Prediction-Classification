@@ -31,6 +31,9 @@ Cardiovascular Diseases (CVDs) proven to be the major reason for a large number 
 <h2> :book: Problem Statement</h2>
 The dataset acquired contain various information related to human body health as well as body condition. The information incorporates the data containing various classification based values as explain in the dataset. The main purpose of this project is to understand the dataset, visualize and prepare a classification based model to predict whether a person is prone to 10 year coronary heart disease or not. 
 
+* Which classification technique is giving the best accuracy
+* What are the important features to be considered for heart diesease prediction
+
 <h2> :book: Data Summery</h2>
 Illustration of the some major data contained is given below:
 
@@ -131,7 +134,7 @@ But we need range between -[infinity] to +[infinity], then take logarithm of the
 ![image](https://user-images.githubusercontent.com/114068950/214812048-379a6839-a941-4472-ac5e-812cf4d7a583.png)
 
 
-Amongst all XGBoost classifier and Logistic regression gives best accuracy score of 84.31 and 84.54 respectively. Whereas, Random FOrest classifier gives the accuaracy of around 84.09%. Decision Tree proven to be less effective model for the project as it gives the efficiency as 73.18%. The performance results is varying from 70 to 84 % and the reason could be no proper pattern of data, not relevant data or not enough data.
+Amongst all XGBoost classifier and Logistic regression gives best accuracy score of 84.31 and 84.54 respectively. Whereas, Random Forest classifier gives the accuaracy of around 84.09%. Decision Tree proven to be less effective model for the project as it gives the efficiency as 73.18%. The performance results is varying from 70 to 84 % and the reason could be no proper pattern of data, not relevant data or not enough data.
 
 # :book: Conclusion
 
