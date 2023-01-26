@@ -103,10 +103,35 @@ Here, we wish to gain important statistical insights from our data and analyze t
 We have considered the train size of the data to be 85% of total data set whereas test set will be covered with 5% of data
 Various allgrithms used are as follows:
 
-A) DecisionTree Classifier
-B) RandomForestClassifier
-C) XGBoost Classifier
-D) Logistic Regression
+* DecisionTree Classifier
+* RandomForestClassifier
+* XGBoost Classifier
+* Logistic Regression
+
+# Logistic Regression:
+
+Logistic regression is one of the most popular Machine Learning algorithms, which comes under the Supervised Learning technique. It is used for predicting the categorical dependent variable using a given set of independent variables. Logistic regression predicts the output of a categorical dependent variable. Therefore the outcome must be a categorical or discrete value. It can be either Yes or No, 0 or 1, true or False, etc. but instead of giving the exact value as 0 and 1, it gives the probabilistic values which lie between 0 and 1. Logistic Regression is much similar to the Linear Regression except that how they are used. Linear Regression is used for solving Regression problems, whereas Logistic regression is used for solving the classification problems. In Logistic regression, instead of fitting a regression line, we fit an "S" shaped logistic function, which predicts two maximum values (0 or 1).
+
+The Logistic regression equation can be obtained from the Linear Regression equation. The mathematical steps to get Logistic Regression equations are given below:
+
+We know the equation of the straight line can be written as:
+
+![image](https://user-images.githubusercontent.com/114068950/214811862-8dafd95e-33b2-47f9-8f16-5153e7433289.png)
+
+In Logistic Regression y can be between 0 and 1 only, so for this let's divide the above equation by (1-y):
+
+![image](https://user-images.githubusercontent.com/114068950/214811895-f6992367-c859-41f2-87f0-dec59f012838.png)
+
+But we need range between -[infinity] to +[infinity], then take logarithm of the equation it will become:
+
+![image](https://user-images.githubusercontent.com/114068950/214811918-daa24444-8678-482e-b1f3-d3269884fec0.png)
+
+# :book: Result
+
+![image](https://user-images.githubusercontent.com/114068950/214812048-379a6839-a941-4472-ac5e-812cf4d7a583.png)
+
+
+Amongst all XGBoost classifier and Logistic regression gives best accuracy score of 84.31 and 84.54 respectively. Whereas, Random FOrest classifier gives the accuaracy of around 84.09%. Decision Tree proven to be less effective model for the project as it gives the efficiency as 73.18%. The performance results is varying from 70 to 84 % and the reason could be no proper pattern of data, not relevant data or not enough data.
 
 # :book: Conclusion
 
