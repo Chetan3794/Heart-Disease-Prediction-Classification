@@ -103,7 +103,7 @@ In the given model some the features are not relevant to 10-Year risk of CHD. Th
 Here, we wish to gain important statistical insights from our data and analyze the distribution of various attributes, correlations between attributes and target variables, and important quotas and proportions of categorical attributes.
 
 **2]Training split of data**
-We have considered the train size of the data to be 85% of total data set whereas test set will be covered with 5% of data
+We have considered the train size of the data to be 85% of total data set whereas test set will be covered with 15% of data
 Various allgrithms used are as follows:
 
 * DecisionTree Classifier
